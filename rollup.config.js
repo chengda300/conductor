@@ -7,15 +7,7 @@ import typescript from "@rollup/plugin-typescript";
 
 export default [{
     plugins: [modify({"@checkIsPluginClass": ""}), nodeResolve(), typescript()],
-    input: Object.fromEntries(
-        globSync("src/**/index.ts").map(file => [
-            path.relative(
-                "src",
-                file.slice(0, file.length - path.extname(file).length)
-            ),
-            file
-        ])
-    ),
+    input: "src/conductor/runner/index.ts",
     output: {
         plugins: [terser({
             module: true,
