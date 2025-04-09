@@ -31,7 +31,7 @@ export default [{
             }
         })],
         dir: "dist",
-        format: "iife",
+        format: "es",
         sourcemap: true,
     }
 }];
