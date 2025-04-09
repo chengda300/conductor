@@ -14,7 +14,8 @@ export default [{
                 file.slice(0, file.length - path.extname(file).length)
             ),
             file
-        ]),
+        ])
+    ),
     output: {
         plugins: [terser({
             module: true,
