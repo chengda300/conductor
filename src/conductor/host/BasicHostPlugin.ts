@@ -8,7 +8,7 @@ import { checkIsPluginClass } from "../../conduit/util";
 import { InternalChannelName, InternalPluginName } from "../strings";
 import { AbortServiceMessage, Chunk, EntryServiceMessage, HelloServiceMessage, IChunkMessage, IErrorMessage, IIOMessage, IServiceMessage, IStatusMessage, PluginServiceMessage, RunnerStatus } from "../types";
 import { ServiceMessageType } from "../types";
-import { IHostFileRpc, IHostPlugin } from "./types";
+import { IHostFileRpc, IHostPlugin } from "./types"; 
 
 @checkIsPluginClass
 export abstract class BasicHostPlugin implements IHostPlugin {
